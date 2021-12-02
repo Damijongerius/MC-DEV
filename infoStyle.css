@@ -1,0 +1,175 @@
+*{
+    border: solid 0px white;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: green;
+    transition: all .2s ease-in-out; 
+}
+
+body{
+    background-color: black;
+}
+
+.header{
+ text-align: center;
+ height:590px;
+ background-image: url('imgs/redstone_lamp.jpg');
+ background-size: 100%;
+ background-repeat: no-repeat;   
+ font-size: 40px; 
+}
+
+.header1{
+  text-align: center;
+  height:590px;
+  background-image: url('imgs/universe.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;   
+  font-size: 40px; 
+ }
+
+ .header2{
+  text-align: center;
+  height:590px;
+  background-image: url('imgs/redstone.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;   
+  font-size: 40px; 
+ }
+
+h2{
+    padding: 0;
+}
+
+.center{
+  margin-top: 50px;
+}
+
+.flex-menu{
+ display: flex;
+ width: auto;
+ height: auto;
+ border-bottom: 5px solid gray;
+ justify-content: center;
+}
+
+.flex-menu > a div {
+    width: 200px;
+    height: 51px;
+    background-color: lightslategray;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+
+}
+
+.flex-menu > a div:hover {
+  transform: scale(1.2); 
+  
+}
+
+.grid-list{
+  display: grid;
+  grid-template-columns: 22% 72%;
+  height: auto;
+  width: 100%;
+  border: solid 1px white;
+
+
+  justify-content: center;
+}
+
+.grid-list > div.one{
+  border: solid 1px black;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.grid-list > div{
+  border: solid 1px black;
+  background-color: white;
+  height: 100px;
+}
+
+.grid-redstone-info{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: repeat(6,1fr);
+  height: auto;
+  width: 100%;
+  border: solid 1px white;
+
+
+  justify-content: center;
+}
+
+.grid-redstone-info > div{
+  border: solid 1px black;
+  background-color: white;
+  min-height: 100px;
+  display: grid;
+}
+
+.span-3{
+    grid-column: span 3;
+}
+
+.span--2{
+  grid-row: span 2;
+}
+
+.span-2-2{
+ grid-column: span 2;
+ grid-row: span 2;
+}
+
+.span-2{
+  grid-column: span 2;
+}
+
+.span-3{
+ grid-column: span 3;
+}
+
+.span--3{
+  grid-row: span 3;
+ }
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px 20px;
+  height: 100px;
+  width: 100%;
+}
+
+
+.footer > div {
+
+  text-align: center;
+  background-color: lightslategray;
+}
+
+@media screen and (max-width:1340px){
+ .flex-menu{
+   flex-wrap: wrap;
+   flex-basis: 100vw
+ }
+ .nr6{
+   width: 200px;
+ }
+}
+@media screen and (max-width:800px){
+  .grid-facts > div{
+    height: 125px;
+  }
+}
