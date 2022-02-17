@@ -14,7 +14,7 @@ body{
 
 .header{
  text-align: center;
- height:590px;
+ height:50vh;
  background-image: url('imgs/redstone_lamp.jpg');
  background-size: 100%;
  background-repeat: no-repeat;   
@@ -23,7 +23,7 @@ body{
 
 .header1{
   text-align: center;
-  height:590px;
+  height:50vh;
   background-image: url('imgs/universe.jpg');
   background-size: 100%;
   background-repeat: no-repeat;   
@@ -32,11 +32,41 @@ body{
 
  .header2{
   text-align: center;
-  height:590px;
+  height:50vh;
   background-image: url('imgs/redstone.jpg');
   background-size: 100%;
   background-repeat: no-repeat;   
   font-size: 40px; 
+ }
+
+ @media screen and (min-width: 900px) {
+  .header{
+    text-align: center;
+    height:80vh;
+    background-image: url('imgs/redstone_lamp.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;   
+    font-size: 40px; 
+   }
+   
+   .header1{
+     text-align: center;
+     height:80vh;
+     background-image: url('imgs/universe.jpg');
+     background-size: 100%;
+     background-repeat: no-repeat;   
+     font-size: 40px; 
+    }
+   
+    .header2{
+     text-align: center;
+     height:80vh;
+     background-image: url('imgs/redstone.jpg');
+     background-size: 100%;
+     background-repeat: no-repeat;   
+     font-size: 40px; 
+    }
+   
  }
 
 h2{
@@ -172,4 +202,35 @@ h2{
   .grid-facts > div{
     height: 125px;
   }
+}
+
+/*
+foto gall
+*/
+
+.grid-container{
+  background-color: darkcyan;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.grid-gal-item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: center;
+}
+
+.flex-item-pic{
+  width: 100%;
+  border: solid 2px greenyellow;
+  border-radius: 10%;
+
+}
+
+.flex-item-ins{
+  border: 0px solid ;
+  height: 50%;
+  background-color: gray;
 }
